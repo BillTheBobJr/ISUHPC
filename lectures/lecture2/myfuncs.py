@@ -7,6 +7,7 @@ MAX_STEPS = 100
 def sqrt(x, kmax = MAX_STEPS):
     s = x
     if(s < 0):
+        print("Invalid input for sqrt function")
         return 0   
     for k in range(kmax):
         s = .5*(s + x/s)
@@ -25,11 +26,13 @@ def exp(x, kmax = MAX_STEPS):
     s = 0
     for k in range(kmax):
         s += (z**k)/factorial(k)
-
     return exp0*s
 
 def ln(x, kmax = MAX_STEPS):
-    s = x
+    if(x <= 0):
+        print("Invalid input for ln function")
+        return 0
+    s = 15
     for i in range(kmax):
         s += x * exp(-s) - 1
     return s
