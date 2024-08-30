@@ -15,7 +15,6 @@ def testexp(test_value):
     abs_error = actual - estimated
     print("For x =", test_value,"the absolute error between numpy and my created func for exp is", abs_error)
 
-
 def testln(test_value):
     actual = np.log(test_value)
     estimated = fn.ln(test_value)
