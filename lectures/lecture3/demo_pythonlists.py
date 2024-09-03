@@ -1,67 +1,78 @@
-list = [1, 3, 2, 1]
-print('Practice append')
-print(list)
-list.append(4)
-print(list)
+list1 = [1, 3, 2, 1]
+print('\nPractice append')
+print(list1)
+list1.append(4)
+print('Run: list1.append(4)')
+print(list1)
 
-list = [1, 3, 2, 1]
-print('Practice clear')
-print(list)
-list.clear()
-print(list)
+list1 = [1, 3, 2, 1]
+print('\nPractice clear')
+print(list1)
+list1.clear()
+print('Run: list1.clear()')
+print(list1)
 
-list = [1, 3, 2, 1]
-print('Practice copy')
-print(list)
-list2 = list.copy()
+list1 = [1, 3, 2, 1]
+print('\nPractice copy')
+print(list1)
+list2 = list1.copy()
+print('Run: list2 = list1.copy()')
 print(list2)
 
 
-list = [1, 3, 2, 1]
-print('Practice count')
-print(list)
-print(list.count(1))
+list1 = [1, 3, 2, 1]
+print('\nPractice count')
+print(list1)
+print('Run: list1.count(1)')
+print(list1.count(1))
 
 
-list = [1, 3, 2, 1]
-print('Practice extend')
+list1 = [1, 3, 2, 1]
+print('\nPractice extend')
 list2 = [3,4,5]
-print(list)
+print(list1)
 print(list2)
-list.extend(list2)
-print(list)
+list1.extend(list2)
+print('Run: list1.extend(list2)')
+print(list1)
 
-list = [1, 3, 2, 1]
-print('Practice index')
-print(list)
-print(list.index(2))
+list1 = [1, 3, 2, 1]
+print('\nPractice index')
+print(list1)
+print('Run: list1.index(2)')
+print(list1.index(2))
 
-list = [1, 3, 2, 1]
-print('Practice insert')
-print(list)
-list.insert(1, 'inserted item')
-print(list)
+list1 = [1, 3, 2, 1]
+print('\nPractice insert')
+print(list1)
+list1.insert(1, 'inserted item')
+print('Run: list1.insert(1, \'inserted item\')')
+print(list1)
 
-list = [1, 3, 2, 1]
-print('Practice pop')
-print(list)
-print(list.pop())
-print(list)
+list1 = [1, 3, 2, 1]
+print('\nPractice pop')
+print(list1)
+print(list1.pop())
+print('Run: print(list1.pop())')
+print(list1)
 
-list = [1, 3, 2, 1]
-print('Practice remove')
-print(list)
-list.remove(2)
-print(list)
+list1 = [1, 3, 2, 1]
+print('\nPractice remove')
+print(list1)
+list1.remove(2)
+print('Run: list1.remove(2)')
+print(list1)
 
-list = [1, 3, 2, 1]
-print('Practice reverse')
-print(list)
-list.reverse()
-print(list)
+list1 = [1, 3, 2, 1]
+print('\nPractice reverse')
+print(list1)
+list1.reverse()
+print('Run: list1.reverse()')
+print(list1)
 
-list = [1, 3, 2, 1]
-print('Practice sort')
-print(list)
-list.sort()
-print(list)
+list1 = [1, 3, 2, 1]
+print('\nPractice sort')
+print(list1)
+list1.sort()
+print('Run: list1.sort()')
+print(list1)
