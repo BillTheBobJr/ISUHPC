@@ -1,8 +1,8 @@
 #
 # Module for basic mathematic functions
 #
-import numpy as np
 E = 2.7182818284590451
+PI = 3.141592653589793
 MAX_STEPS = 100
 
 def sqrt(x, kmax = MAX_STEPS):
@@ -13,6 +13,20 @@ def sqrt(x, kmax = MAX_STEPS):
     for k in range(kmax):
         s = .5*(s + x/s)
     return s
+
+def logBase2Approx(x):
+    s = int(x + .5)
+    count = 0
+    while(s > 0):
+        s >>= 1
+        count += 1
+    
+    return count
+
+# Returns an approximation for ln(x!)
+# Only necessary when calculating equations containing large x!
+def stirlingApprox(x):
+    return x * logBase2Approx(x) - x + .5*logBase2Approx(2*PI*x)
 
 def factorial(x):
     s = 1
@@ -28,15 +42,6 @@ def exp(x, kmax = MAX_STEPS):
     for k in range(kmax):
         s += (z**k)/factorial(k)
     return exp0*s
-
-def logBase2Approx(x):
-    s = int(x + .5)
-    count = 0
-    while(s > 0):
-        s >>= 1
-        count += 1
-    
-    return count
 
 #The approximation for s is based off of the idea presented by in the following link
 #https://www.researchgate.net/post/Is_there_an_approximation_of_lnx_for_a_large_value_of_x#:~:text=ln(x)%20is%20an%20analytic,any%20point%20of%20its%20domain.&text=ln%20x%20%3D%20ln%20a%20%2B%20n,quite%20good%20as%20an%20approximation.
