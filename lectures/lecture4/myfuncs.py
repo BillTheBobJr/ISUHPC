@@ -109,7 +109,6 @@ def ln(x, initial_guess = None, kmax = MAX_STEPS, tol = TOL, print_how = 0):
     # if no initial_guess, then we calculate an approximation of ln(x)
     s = initial_guess or LN2*logBase2Approx(x)
 
-
     #loop for newtons method
     for k in range(kmax):
         sDelta = x * exp(-s) - 1
