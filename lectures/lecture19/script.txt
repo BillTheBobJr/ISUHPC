@@ -1,0 +1,1 @@
+gcc lec19_vector.c lec19.c -o main.exe -fopenmp

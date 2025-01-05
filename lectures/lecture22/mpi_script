@@ -1,0 +1,3 @@
+mpicc -O3 -Wall -std=c99 -c lec22_mpi.c
+mpicc lec22_mpi.o -o main.exe
+mpirun -np 5 ./main.exe > output.data

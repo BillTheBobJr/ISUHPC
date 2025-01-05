@@ -1,0 +1,3 @@
+mpicc -O3 -Wall -std=c99 -c main.c -fopenmp
+mpicc main.o -o main.exe -fopenmp
+mpirun -np 5 ./main.exe > output.txt
